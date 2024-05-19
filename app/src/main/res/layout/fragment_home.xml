@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:id="@+id/frag_home"
+    >
+
+    <!-- res/layout/activity_main.xml -->
+
+    <com.google.android.material.appbar.AppBarLayout
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4D61CF"
+            app:title="Home"
+            app:titleTextColor="@color/white"
+            app:layout_scrollFlags="enterAlways|scroll"
+            app:menu="@menu/option_menu_item"
+            >
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/button_layout">
+
+        <TextView
+            android:layout_marginTop="55dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="BOLA PEDIA"
+            android:textSize="35sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Bola pedia adalah media yang aktif didalam dunia sepak bola di seluruh dunia, yang menyajika berita berita terbaru dan informasi yang jelas. dan juga saya mohon kepada bapak semoga nilai saya tidak terlalu jelek karena saya sudah berusaha semaksimal mungkin, terima kasih pak, :)."
+            android:layout_marginHorizontal="15dp"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#77B0AA"
+        >
+
+
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="HOME"
+            android:backgroundTint="#77B0AA">
+
+        </Button>
+
+
+        <Button
+            android:id="@+id/btn_berita"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="BERITA"
+            android:backgroundTint="#77B0AA">
+
+        </Button>
+
+
+        <Button
+            android:id="@+id/btn_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PROFILE"
+            android:backgroundTint="#77B0AA">
+
+        </Button>
+
+
+
+    </LinearLayout>
+</RelativeLayout>
